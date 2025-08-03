@@ -25,6 +25,7 @@
 
 <!--<app-ng-style></app-ng-style>-->
 
+<!--
 <app-ng-content>
   <div class="titulo">
     Meu título passado
@@ -38,3 +39,9 @@
     Segundo conteúdo passado
   </div>
 </app-ng-content>
+-->
+
+<!--<app-event-binding></app-event-binding>-->
+
+<app-input-output [menu]="desenvolvimento" (nomeClicado)="valorPassado($event)"></app-input-output>
+<p>Você clicou em: {{ valor }}</p>
