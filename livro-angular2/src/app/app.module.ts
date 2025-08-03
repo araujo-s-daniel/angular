@@ -20,6 +20,7 @@ import { InputOutputComponent } from './input-output/input-output.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { DiComponent } from './di/di.component';
 import { MeuLogService } from './di/meu-log.service';
+import { Angular4Component } from './angular-4/angular-4.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { MeuLogService } from './di/meu-log.service';
     EventBindingComponent,
     InputOutputComponent,
     FormularioComponent,
-    DiComponent
+    DiComponent,
+    Angular4Component
   ],
   imports: [
     BrowserModule,

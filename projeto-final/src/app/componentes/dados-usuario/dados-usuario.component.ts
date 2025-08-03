@@ -10,7 +10,7 @@ import { ContatosDataBaseService } from 'app/servicos/contatos-data-base.service
 })
 export class DadosUsuarioComponent implements OnInit {
 
-  enviado: boolean = false;
+  enviado = false;
   _nome: string;
   _telefone: string;
   _email: string;
@@ -24,11 +24,11 @@ export class DadosUsuarioComponent implements OnInit {
   }
 
   enviarDados() {
-    if (this._tipo == undefined) {
+    if (this._tipo === undefined) {
       this._tipo = this.tipos[0];
     }
 
-    let novoContato = new Contato(this._nome, this._telefone, this._email, this._tipo);
+    const novoContato = new Contato(this._nome, this._telefone, this._email, this._tipo);
     this.dataBaseService.setContato(novoContato);
     this.enviado = !this.enviado;
   }
